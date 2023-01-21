@@ -2,9 +2,15 @@
 
 Oldbros template to start developing a library (npm package)
 
-## Motivation
+High standarts for high-end quality javascript libraries development
 
-Up to date template for writing libraries. ES Modules
+Docs, tests, coverage 90%, js powered with ts, types, lint and examples
+
+NodeJS 16+
+
+## Description
+
+Up to date template for writing libraries. ES Modules.
 
 Utilize typescript as JS extension - code typesafe, more readable and no way to use Questionable ts-specific features. Best from two worlds!
   - See examples in `src` folder.
@@ -13,10 +19,13 @@ Documentation from code using `typedoc`
 
 IDE Autocomplition
 
-Testing compatible with `node:test` using `tap` and `c8` for coverage
+Testing compatible with `node:test` using `tap` and `c8` for coverage. Coverage 90% required!!!
 
 No **prettier**
   - There are conflicts between eslint and prettier. library **eslint-plugin-prettier** just disables eslint rules if any conflicts with prettier. We don't like that. No rules need to be disabled. Eslint can format for most cases.
+
+Unit tests near by style. for each `.js` file there is `.test.js` file.
+For integration testing use `test` folder.
 
 ## Usage
 
