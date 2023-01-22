@@ -58,9 +58,11 @@ For integration testing use `test` folder.
 
 4. **tap** - testing library, compatible with upcoming `node:test`
 
-5. **typedoc** - Generates docs from ts files `tsconfig.types.json`
+5. **typedoc** - Generates docs from ts files using `tsconfig.json`
 
 ## Typescript usage
+
+Must read [**TypeScript JSDoc**](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
 
 1. It is possible to write types in `d.ts` files and use them in your JS code via **@typedef**
   - See `src/dtsTypes.d.ts` and `src/useDts.js`
@@ -74,12 +76,15 @@ For integration testing use `test` folder.
 Example:
 ```js
 /** @type {(fn: object, ...args: any[]) => object} */
-const partialApplication = (fn, ...args) => fn.bind(null, ...args)
+const partialApplication = (fn, ...args) =>
+  (...nextArgs) => fn(...args, ...nextArgs);
 
 /** @type {(a: number, b: number, c: number) => number} */
-const sumThree = (a, b, c) => a + b + c;
+const sumThreeNums = (a, b, c) => a + b + c;
 
 /** @type {(b: number, c: number) => number} */
-const sumTwoPlusTen = partialApplication(sumThree, 10);
+const sumTwoNumsPlusTen = partialApplication(sumThreeNums, 10);
+
+sumTwoNumsPlusTen(10, 10);
 
 ```

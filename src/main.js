@@ -1,6 +1,7 @@
 // reexports
 
 export { DtsClass, dtsSum, dtsRandom } from './useDts.js';
+export { JSDocClass, jsDocDouble, jsDocRandom } from './useJsTypedef.js';
 
 /**
  * double - function doubles a number
