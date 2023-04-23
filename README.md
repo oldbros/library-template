@@ -1,5 +1,7 @@
 # library-template
 
+![Coverage](/docs/coverage.svg "Coverage")
+
 Oldbros template to start developing a library (npm package)
 
 High standarts for high-end quality javascript libraries development

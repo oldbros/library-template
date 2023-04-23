@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "template",
   "version": "0.0.0",
   "description": "",
   "main": "src/main.js",
@@ -10,7 +10,7 @@
     "types": "rm -rf types && npx tsc --project tsconfig.types.json",
     "lint": "eslint .",
     "fmt": "eslint --fix .",
-    "docs": "npx typedoc --entryPointStrategy packages .",
+    "docs": "npx typedoc --plugin typedoc-plugin-coverage --coverageLabel coverage --plugin typedoc-plugin-markdown --entryPointStrategy resolve packages ./src/main.js",
     "test": "npx c8 --check-coverage tap --no-coverage",
     "final": "npm run fmt && npm run check && npm run lint && npm run test && npm run types && npm run docs"
   },
@@ -38,6 +38,8 @@
     "eslint-config-oldbros": "^1.0.3",
     "tap": "^16.3.3",
     "typedoc": "^0.24.5",
+    "typedoc-plugin-coverage": "^2.1.0",
+    "typedoc-plugin-markdown": "^3.15.2",
     "typescript": "^5.0.4"
   }
 }
