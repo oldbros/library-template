@@ -46,19 +46,23 @@ ___
 
 ▸ **dtsRandom**(): `DtsExampleType`
 
+Random
+
 #### Returns
 
 `DtsExampleType`
 
 #### Defined in
 
-[useDts.js:26](https://github.com/oldbros/library-template/blob/main/src/useDts.js#L26)
+[useDts.js:35](https://github.com/oldbros/library-template/blob/main/src/useDts.js#L35)
 
 ___
 
 ### dtsSum
 
 ▸ **dtsSum**(`...args`): `number`
+
+Sum
 
 #### Parameters
 

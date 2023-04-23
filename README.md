@@ -1,6 +1,7 @@
 # library-template
 
-![Coverage](/docs/coverage.svg "Coverage")
+![Documented](/docs/coverage.svg "Documented")
+![Test Covered](/docs/testCoverage.svg "Test Covered")
 
 Oldbros template to start developing a library (npm package)
 

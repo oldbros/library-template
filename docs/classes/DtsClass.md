@@ -44,6 +44,8 @@
 
 ▸ **write**(`buf`): `Promise`<`void`\>
 
+Write
+
 #### Parameters
 
 | Name | Type |
@@ -56,4 +58,4 @@
 
 #### Defined in
 
-[useDts.js:16](https://github.com/oldbros/library-template/blob/main/src/useDts.js#L16)
+[useDts.js:19](https://github.com/oldbros/library-template/blob/main/src/useDts.js#L19)
