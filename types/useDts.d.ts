@@ -30,4 +30,4 @@ export type DtsType = import('./dtsTypes').DtsExampleType;
 /**
  * No file extensions!!!
  */
-export type dtsFn = typeof import("./dtsTypes").dtsExampleFunction;
+export type dtsFn = import('./dtsTypes').dtsExampleFunction;

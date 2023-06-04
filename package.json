@@ -12,7 +12,7 @@
     "fmt": "eslint --fix .",
     "typedoc": "npx typedoc --plugin typedoc-plugin-coverage --coverageLabel docs --plugin typedoc-plugin-markdown --entryPointStrategy resolve packages ./src/main.js",
     "docs": "npm run typedoc && npm run test:coverage",
-    "test": "npx c8 tap --no-coverage",
+    "test": "npx c8 --check-coverage --lines 85 --functions 90 --branches 85 --statements 85 tap --no-coverage",
     "test:coverage": "npx istanbul-cobertura-badger -e 85 -g 70 -b testCoverage -r coverage/cobertura-coverage.xml -d docs/",
     "final": "npm run fmt && npm run check && npm run lint && npm run test && npm run types && npm run docs"
   },

@@ -67,8 +67,8 @@ For integration testing use `test` folder.
 
 Must read [**TypeScript JSDoc**](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
 
-1. It is possible to write types in `d.ts` files and use them in your JS code via **@typedef**
-  - See `src/dtsTypes.d.ts` and `src/useDts.js`
+1. It is possible to write types in `.ts` files and use them in your JS code via **@typedef**
+  - See `src/dtsTypes.ts` and `src/useDts.js`
 
 2. It is possible to use `.js` files to write types convention - name file `.types.js`
   - See `src/.types.js` and `src/useJsTypedef.js`

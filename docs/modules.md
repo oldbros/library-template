@@ -76,7 +76,7 @@ Sum
 
 #### Defined in
 
-[dtsTypes.d.ts:12](https://github.com/oldbros/library-template/blob/main/src/dtsTypes.d.ts#L12)
+dtsTypes.ts:12
 
 ___
 
